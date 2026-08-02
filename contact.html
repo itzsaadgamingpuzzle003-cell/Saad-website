@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saad Bloxd Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#39b54a,#145a32);
+    color:white;
+}
+
+header{
+background:#0b3d16;
+padding:25px;
+text-align:center;
+font-size:42px;
+font-weight:bold;
+box-shadow:0 0 30px lime;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+
+from{
+text-shadow:0 0 10px white;
+}
+
+to{
+text-shadow:0 0 25px lime;
+}
+
+}
+
+.video{
+
+animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+
+<nav>
+<a href="#">🏠 Home</a>
+<a href="#videos">🎥 Videos</a>
+<a href="https://youtube.com/@Saad_Bloxd_YT3" target="_blank">📺 YouTube</a>
+<a href="https://bloxd.io/" target="_blank">🎮 Play</a>
+</nav>
+
+nav{
+background:#145a32;
+display:flex;
+justify-content:center;
+gap:25px;
+padding:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+color:gold;
+transform:scale(1.1);
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:15px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#ffc107;
+    transform:scale(1.05);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    color:black;
+    margin:30px 0;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+.card h2{
+    color:#145a32;
+    margin-bottom:15px;
+}
+
+.card a{
+    color:#0066ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.card a:hover{
+    text-decoration:underline;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.video{
+    background:white;
+    color:black;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.video:hover{
+    transform:translateY(-8px);
+}
+
+.video img{
+    width:100%;
+}
+
+.video h3{
+    padding:12px;
+}
+
+.video a{
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    background:#ff0000;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+}
+
+.video a:hover{
+    background:#cc0000;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    background:#0b3d16;
+}
+
+.discord{
+    font-size:24px;
+    font-weight:bold;
+    color:#5865F2;
+}
+</style>
+</head>
+
+<body>
+<div id="loading">
+
+<h1>Loading Saad Bloxd Website...</h1>
+
+</div>
+#loading{
+
+position:fixed;
+width:100%;
+height:100%;
+background:#111;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+z-index:9999;
+
+}
+<script>
+
+window.onload=function(){
+
+document.getElementById("loading").style.display="none";
+
+}
+
+</script>
+
+<div class="background"></div>
+.background{
+position:fixed;
+width:100%;
+height:100%;
+background:url("https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1600");
+opacity:.12;
+z-index:-1;
+background-size:cover;
+}
+
+<header>
+Saad Bloxd Website
+</header>
+
+<section class="hero">
+<h1>Welcome!</h1>
+<p>Everything about Bloxd.io, my YouTube channel, and my latest videos.</p>
+
+<a class="button" href="https://bloxd.io/" target="_blank">
+🎮 Play Bloxd.io
+</a>
+</section>
+
+<div class="container">
+
+<div class="card">
+<h2>📺 My YouTube Channel</h2>
+
+<p>
+Subscribe here:
+</p>
+
+<br>
+
+<a href="https://youtube.com/@Saad_Bloxd_YT3" target="_blank">
+youtube.com/@Saad_Bloxd_YT3
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>🎮 How To Play Bloxd.io</h2>
+
+<p>
+Click the button below to start playing Bloxd.io.
+</p>
+
+<br>
+
+<a class="button" href="https://bloxd.io/" target="_blank">
+Play Now
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>💬 Discord</h2>
+
+<p>Add me on Discord:</p>
+
+<br>
+
+<div class="discord">
+saadisonline_
+</div>
+
+</div>
+
+<h1 style="text-align:center;margin:40px 0;">
+🔥 My Top Videos
+</h1>
+
+<div class="video-grid">
+
+<div class="video">
+<img src="https://iili.io/CSSbXYN.png" alt="Top 3 Bloxd.io T-packs">
+<h3>Top 3 Bloxd.io T-packs</h3>
+<a href="https://www.youtube.com/watch?v=TBI03pJbXks" target="_blank">▶ Watch Video</a>
+</div>
+
+<div class="video">
+<img src="https://iili.io/CSSyK2R.png" alt="Best Bloxd.io Bridging Server">
+<h3>Best Bloxd.io Bridging Server!</h3>
+<a href="https://www.youtube.com/watch?v=sxrhAhMoOfI" target="_blank">▶ Watch Video</a>
+</div>
+
+<div class="video">
+<img src="https://iili.io/CSUdCcG.png" alt="Bedwars Against YouTubers">
+<h3>Bedwars Against YouTubers</h3>
+<a href="https://www.youtube.com/watch?v=XCsj_I730gw" target="_blank">▶ Watch Video</a>
+</div>
+
+<div class="video">
+<img src="https://iili.io/CSU37vj.png" alt="Bloxd.io Bedwars ASMR">
+<h3>Bloxd.io Bedwars ASMR</h3>
+<a href="https://www.youtube.com/watch?v=biOsa8ToOZM" target="_blank">▶ Watch Video</a>
+</div>
+
+<div class="video">
+<img src="https://iili.io/CSU9Gtt.png" alt="2 Player Obby with @Ljmited">
+<h3>2 Player Obby with @Ljmited</h3>
+<a href="https://www.youtube.com/watch?v=Eqnfmf3UW64" target="_blank">▶ Watch Video</a>
+</div>
+
+<div class="video">
+<img src="https://iili.io/CSU2gmQ.png" alt="50 Subscribers T-pack">
+<h3>50 Subscribers T-pack</h3>
+<a href="https://www.youtube.com/watch?v=X09gz8hggT4" target="_blank">▶ Watch Video</a>
+</div>
+
+</div>
+
+</div>
+<div class="card">
+
+<h2>🔥 More NCS Songs for Bloxd.io</h2>
+
+<p>My favorite NCS songs for Bedwars, PvP, Bridging and grinding!</p>
+
+<div class="video-grid">
+<div class="video">
+
+<img src="https://img.youtube.com/vi/J2X5mJ3HDYE/hqdefault.jpg">
+
+<h3>🎵 Invincible</h3>
+
+<p>Great for intense Bedwars fights.</p>
+
+<a href="https://www.youtube.com/watch?v=J2X5mJ3HDYE" target="_blank">
+
+▶ Listen
+
+</a>
+
+</div>
+<div class="video">
+
+<img src="https://img.youtube.com/vi/3nQNiWdeH2Q/hqdefault.jpg">
+
+<h3>🎵 Heroes Tonight</h3>
+
+<p>One of the best relaxing songs.</p>
+
+<a href="https://www.youtube.com/watch?v=3nQNiWdeH2Q" target="_blank">
+
+▶ Listen
+
+</a>
+
+</div>
+<div class="video">
+
+<img src="https://img.youtube.com/vi/__CRWE-L45k/hqdefault.jpg">
+
+<h3>🎵 Symbolism</h3>
+
+<p>Perfect while speed bridging.</p>
+
+<a href="https://www.youtube.com/watch?v=__CRWE-L45k" target="_blank">
+
+▶ Listen
+
+</a>
+
+</div>
+<div class="video">
+
+<img src="https://img.youtube.com/vi/TW9d8vYrVFQ/hqdefault.jpg">
+
+<h3>🎵 Sky High</h3>
+
+<p>Relaxing gameplay music.</p>
+
+<a href="https://www.youtube.com/watch?v=TW9d8vYrVFQ" target="_blank">
+
+▶ Listen
+
+</a>
+
+</div>
+<div class="video">
+
+<img src="https://img.youtube.com/vi/jK2aIUmmdP4/hqdefault.jpg">
+
+<h3>🎵 My Heart</h3>
+
+<p>Great for late-night Bloxd sessions.</p>
+
+<a href="https://www.youtube.com/watch?v=jK2aIUmmdP4" target="_blank">
+
+▶ Listen
+
+</a>
+
+</div>
+<div class="video">
+
+<img src="https://img.youtube.com/vi/9rujCfYXhQc/hqdefault.jpg">
+
+<h3>🎵 Fearless</h3>
+
+<p>Awesome for PvP battles.</p>
+
+<a href="https://www.youtube.com/watch?v=9rujCfYXhQc" target="_blank">
+
+▶ Listen
+
+</a>
+
+</div>
+<div class="video">
+
+<img src="https://img.youtube.com/vi/p7ZsBPK656s/hqdefault.jpg">
+
+<h3>🎵 Blank</h3>
+
+<p>Calm and chill background music.</p>
+
+<a href="https://www.youtube.com/watch?v=p7ZsBPK656s" target="_blank">
+
+▶ Listen
+
+</a>
+
+</div>
+<div class="video">
+
+<img src="https://img.youtube.com/vi/bM7SZ5SBzyY/hqdefault.jpg">
+
+<h3>🎵 Fade</h3>
+
+<p>A legendary gaming song.</p>
+
+<a href="https://www.youtube.com/watch?v=bM7SZ5SBzyY" target="_blank">
+
+▶ Listen
+
+</a>
+
+</div>
+
+<footer>
+© 2026 Saad Bloxd Website | Made by Saad ❤️
+</footer>
+<button onclick="topFunction()" id="topBtn">⬆</button>
+
+<script>
+
+const btn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+btn.style.display=
+window.scrollY>300?"block":"none";
+
+}
+
+function topFunction(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+#topBtn{
+
+display:none;
+position:fixed;
+right:20px;
+bottom:20px;
+border:none;
+padding:15px;
+font-size:20px;
+border-radius:50%;
+background:#ff9800;
+cursor:pointer;
+
+}
+<script>
+
+let visits=localStorage.getItem("visits");
+
+if(visits==null){
+
+visits=1;
+
+}else{
+
+visits++;
+
+}
+
+localStorage.setItem("visits",visits);
+
+document.getElementById("visitor").innerHTML=visits;
+
+</script>
+<div class="card">
+
+<h2>👀 Visitors</h2>
+
+<h1 id="visitor"></h1>
+
+</div>
+<div class="card">
+
+<h2>💡 Bloxd Tip</h2>
+
+<p id="tip"></p>
+
+</div>
+<script>
+
+const tips=[
+
+"Practice bridging every day!",
+"Use texture packs for better visibility!",
+"Always protect your bed first!",
+"Don't waste gold early!",
+"Learn clutching to survive falls!"
+
+];
+
+document.getElementById("tip").innerHTML=
+tips[Math.floor(Math.random()*tips.length)];
+
+</script>
+<div class="card">
+
+<h2>🕒 Current Time</h2>
+
+<h1 id="clock"></h1>
+
+</div>
+
+<script>
+
+setInterval(()=>{
+
+document.getElementById("clock").innerHTML=
+new Date().toLocaleTimeString();
+
+},1000);
+
+</script>
+<div id="blocks"></div>
+
+<script>
+const blocks=document.getElementById("blocks");
+
+setInterval(()=>{
+let block=document.createElement("div");
+
+block.className="block";
+
+block.style.left=Math.random()*window.innerWidth+"px";
+
+block.style.animationDuration=(Math.random()*3+2)+"s";
+
+blocks.appendChild(block);
+
+setTimeout(()=>{
+block.remove();
+},5000);
+
+},200);
+</script>
+#blocks{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+
+}
+
+.block{
+
+position:absolute;
+width:18px;
+height:18px;
+background:#7CFC00;
+animation:fall linear;
+
+}
+
+@keyframes fall{
+
+from{
+top:-30px;
+}
+
+to{
+top:100%;
+transform:rotate(360deg);
+}
+
+}
+<script>
+
+document.addEventListener("mousemove",e=>{
+
+let dot=document.createElement("div");
+
+dot.className="dot";
+
+dot.style.left=e.pageX+"px";
+
+dot.style.top=e.pageY+"px";
+
+document.body.appendChild(dot);
+
+setTimeout(()=>dot.remove(),600);
+
+});
+
+</script>
+.dot{
+
+position:absolute;
+width:10px;
+height:10px;
+border-radius:50%;
+background:yellow;
+pointer-events:none;
+animation:fade .6s linear;
+
+}
+
+@keyframes fade{
+
+to{
+
+opacity:0;
+transform:scale(4);
+
+}
+
+}
+
+</body>
+</html>
