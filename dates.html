@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Saad Bloxd Website</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-    background:linear-gradient(135deg,#39b54a,#145a32);
-    color:white;
+
+background:linear-gradient(135deg,#1a5f1a,#0b3d16);
+color:white;
+overflow-x:hidden;
+
 }
 
+/* ===== Header ===== */
+
 header{
+
 background:#0b3d16;
 padding:25px;
 text-align:center;
 font-size:42px;
 font-weight:bold;
-box-shadow:0 0 30px lime;
+box-shadow:0 0 25px lime;
 animation:glow 2s infinite alternate;
+position:sticky;
+top:0;
+z-index:999;
+
 }
 
 @keyframes glow{
 
 from{
-text-shadow:0 0 10px white;
+text-shadow:0 0 8px white;
 }
 
 to{
@@ -41,575 +55,919 @@ text-shadow:0 0 25px lime;
 
 }
 
-.video{
-
-animation:float 3s ease-in-out infinite;
-
-}
-
-@keyframes float{
-
-0%{
-transform:translateY(0px);
-}
-
-50%{
-transform:translateY(-8px);
-}
-
-100%{
-transform:translateY(0px);
-}
-
-}
-
-
-<nav>
-<a href="#">🏠 Home</a>
-<a href="#videos">🎥 Videos</a>
-<a href="https://youtube.com/@Saad_Bloxd_YT3" target="_blank">📺 YouTube</a>
-<a href="https://bloxd.io/" target="_blank">🎮 Play</a>
-</nav>
+/* ===== Navigation ===== */
 
 nav{
+
 background:#145a32;
 display:flex;
 justify-content:center;
-gap:25px;
+gap:35px;
 padding:15px;
+flex-wrap:wrap;
+
 }
 
 nav a{
+
 color:white;
 text-decoration:none;
 font-size:18px;
+font-weight:bold;
 transition:.3s;
+
 }
 
 nav a:hover{
+
 color:gold;
-transform:scale(1.1);
+transform:scale(1.08);
+
 }
 
+/* ===== Hero ===== */
+
 .hero{
-    text-align:center;
-    padding:60px 20px;
+
+text-align:center;
+padding:70px 20px;
+
 }
 
 .hero h1{
-    font-size:55px;
+
+font-size:60px;
+margin-bottom:15px;
+
 }
 
 .hero p{
-    font-size:20px;
-    margin-top:15px;
+
+font-size:22px;
+margin-bottom:25px;
+
 }
 
 .button{
-    display:inline-block;
-    margin-top:25px;
-    padding:15px 35px;
-    background:#ff9800;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-    font-size:20px;
-    transition:.3s;
+
+display:inline-block;
+padding:15px 35px;
+background:#ff9800;
+color:white;
+text-decoration:none;
+font-size:20px;
+border-radius:10px;
+transition:.3s;
+
 }
 
 .button:hover{
-    background:#ffc107;
-    transform:scale(1.05);
+
+background:#ffc107;
+transform:scale(1.05);
+
 }
+
+/* ===== Main Container ===== */
 
 .container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+
+width:92%;
+max-width:1300px;
+margin:auto;
+
 }
 
+/* ===== Cards ===== */
+
 .card{
-    background:white;
-    color:black;
-    margin:30px 0;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(0,0,0,.3);
+
+background:white;
+color:black;
+margin:30px 0;
+padding:25px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+
 }
 
 .card h2{
-    color:#145a32;
-    margin-bottom:15px;
+
+color:#145a32;
+margin-bottom:15px;
+
 }
 
-.card a{
-    color:#0066ff;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.card a:hover{
-    text-decoration:underline;
-}
+/* ===== Grid ===== */
 
 .video-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+
 }
 
 .video{
-    background:white;
-    color:black;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 0 20px rgba(0,0,0,.35);
-    transition:.3s;
+
+background:white;
+color:black;
+border-radius:15px;
+overflow:hidden;
+transition:.35s;
+box-shadow:0 0 20px rgba(0,0,0,.35);
+
 }
 
 .video:hover{
-    transform:translateY(-8px);
+
+transform:translateY(-8px);
+box-shadow:0 0 25px lime;
+
 }
 
 .video img{
-    width:100%;
+
+width:100%;
+display:block;
+
 }
 
 .video h3{
-    padding:12px;
+
+padding:15px;
+
+}
+
+.video p{
+
+padding:0 15px 15px;
+
 }
 
 .video a{
-    display:block;
-    padding:12px;
-    text-decoration:none;
-    background:#ff0000;
-    color:white;
-    text-align:center;
-    font-weight:bold;
+
+display:block;
+padding:14px;
+background:#ff0000;
+color:white;
+text-decoration:none;
+text-align:center;
+font-weight:bold;
+
 }
 
 .video a:hover{
-    background:#cc0000;
+
+background:#cc0000;
+
 }
 
-footer{
-    text-align:center;
-    padding:25px;
-    margin-top:40px;
-    background:#0b3d16;
-}
+/* ===== Crosshair Cards ===== */
 
-.discord{
-    font-size:24px;
-    font-weight:bold;
-    color:#5865F2;
-}
-</style>
-</head>
+.crosshair-box{
 
-<body>
-<div id="loading">
-
-<h1>Loading Saad Bloxd Website...</h1>
-
-</div>
-#loading{
-
-position:fixed;
-width:100%;
-height:100%;
-background:#111;
+background:black;
+padding:35px;
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:40px;
-z-index:9999;
-
-}
-<script>
-
-window.onload=function(){
-
-document.getElementById("loading").style.display="none";
 
 }
 
-</script>
+.crosshair-box img{
 
-<div class="background"></div>
-.background{
-position:fixed;
-width:100%;
-height:100%;
-background:url("https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1600");
-opacity:.12;
-z-index:-1;
-background-size:cover;
+width:120px;
+height:120px;
+object-fit:contain;
+
 }
+
+.download-btn{
+
+display:block;
+background:#00b050;
+color:white;
+text-decoration:none;
+padding:14px;
+text-align:center;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.download-btn:hover{
+
+background:#008f3b;
+
+}
+
+.best{
+
+border:4px solid gold;
+box-shadow:0 0 25px gold;
+
+}
+
+.best h3{
+
+color:gold;
+
+}
+
+/* ===== Footer ===== */
+
+footer{
+
+margin-top:40px;
+padding:25px;
+background:#0b3d16;
+text-align:center;
+font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+<body>
 
 <header>
-Saad Bloxd Website
+
+🎮 Saad Bloxd Website
+
 </header>
 
-<section class="hero">
-<h1>Welcome!</h1>
-<p>Everything about Bloxd.io, my YouTube channel, and my latest videos.</p>
+<nav>
 
-<a class="button" href="https://bloxd.io/" target="_blank">
-🎮 Play Bloxd.io
+<a href="#">🏠 Home</a>
+
+<a href="#videos">🎥 Videos</a>
+
+<a href="#music">🎵 Music</a>
+
+<a href="#crosshair">🎯 Crosshairs</a>
+
+<a href="https://bloxd.io" target="_blank">🎮 Play Bloxd.io</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>Welcome!</h1>
+
+<p>
+
+Everything about Bloxd.io, my YouTube channel, favorite music and crosshairs.
+
+</p>
+
+<a class="button"
+
+href="https://bloxd.io"
+
+target="_blank">
+
+▶ Play Bloxd.io
+
 </a>
+
 </section>
 
 <div class="container">
+<!-- ================= ABOUT ================= -->
 
 <div class="card">
+
 <h2>📺 My YouTube Channel</h2>
 
 <p>
-Subscribe here:
+Welcome to my Bloxd.io channel where I upload Bedwars, Bridging,
+Texture Packs, Crosshairs, ASMR and much more!
 </p>
 
 <br>
 
-<a href="https://youtube.com/@Saad_Bloxd_YT3" target="_blank">
-youtube.com/@Saad_Bloxd_YT3
+<a class="button"
+href="https://youtube.com/@Saad_Bloxd_YT3"
+target="_blank">
+
+🔴 Subscribe Now
+
 </a>
 
 </div>
+
+<!-- ================= DISCORD ================= -->
+
+<div class="card">
+
+<h2>💬 Discord</h2>
+
+<p>
+
+Want to talk with me?
+
+</p>
+
+<br>
+
+<h2 style="color:#5865F2;">
+
+saadisonline_
+
+</h2>
+
+</div>
+
+<!-- ================= HOW TO PLAY ================= -->
 
 <div class="card">
 
 <h2>🎮 How To Play Bloxd.io</h2>
 
 <p>
-Click the button below to start playing Bloxd.io.
+
+1️⃣ Open Bloxd.io
+
+<br><br>
+
+2️⃣ Choose your favorite game mode.
+
+<br><br>
+
+3️⃣ Practice Bridging.
+
+<br><br>
+
+4️⃣ Defeat enemies.
+
+<br><br>
+
+5️⃣ Become a Bloxd Legend.
+
 </p>
 
 <br>
 
-<a class="button" href="https://bloxd.io/" target="_blank">
-Play Now
+<a class="button"
+
+href="https://bloxd.io"
+
+target="_blank">
+
+🎮 Play Now
+
 </a>
 
 </div>
 
-<div class="card">
+<!-- ================= TOP VIDEOS ================= -->
 
-<h2>💬 Discord</h2>
+<div id="videos"></div>
 
-<p>Add me on Discord:</p>
+<h1 style="text-align:center;margin:50px 0;">
 
-<br>
-
-<div class="discord">
-saadisonline_
-</div>
-
-</div>
-
-<h1 style="text-align:center;margin:40px 0;">
 🔥 My Top Videos
+
 </h1>
 
 <div class="video-grid">
 
 <div class="video">
-<img src="https://iili.io/CSSbXYN.png" alt="Top 3 Bloxd.io T-packs">
-<h3>Top 3 Bloxd.io T-packs</h3>
-<a href="https://www.youtube.com/watch?v=TBI03pJbXks" target="_blank">▶ Watch Video</a>
+
+<img src="https://iili.io/CSSbXYN.png">
+
+<h3>Top 3 Bloxd.io T-Packs</h3>
+
+<p>Best texture packs for more FPS.</p>
+
+<a href="https://www.youtube.com/watch?v=TBI03pJbXks"
+
+target="_blank">
+
+▶ Watch
+
+</a>
+
 </div>
 
 <div class="video">
-<img src="https://iili.io/CSSyK2R.png" alt="Best Bloxd.io Bridging Server">
-<h3>Best Bloxd.io Bridging Server!</h3>
-<a href="https://www.youtube.com/watch?v=sxrhAhMoOfI" target="_blank">▶ Watch Video</a>
+
+<img src="https://iili.io/CSSyK2R.png">
+
+<h3>Best Bloxd.io Bridging Server</h3>
+
+<p>Practice your bridge faster.</p>
+
+<a href="https://www.youtube.com/watch?v=sxrhAhMoOfI"
+
+target="_blank">
+
+▶ Watch
+
+</a>
+
 </div>
 
 <div class="video">
-<img src="https://iili.io/CSUdCcG.png" alt="Bedwars Against YouTubers">
+
+<img src="https://iili.io/CSUdCcG.png">
+
 <h3>Bedwars Against YouTubers</h3>
-<a href="https://www.youtube.com/watch?v=XCsj_I730gw" target="_blank">▶ Watch Video</a>
+
+<p>Epic PvP battles.</p>
+
+<a href="https://www.youtube.com/watch?v=XCsj_I730gw"
+
+target="_blank">
+
+▶ Watch
+
+</a>
+
 </div>
 
 <div class="video">
-<img src="https://iili.io/CSU37vj.png" alt="Bloxd.io Bedwars ASMR">
+
+<img src="https://iili.io/CSU37vj.png">
+
 <h3>Bloxd.io Bedwars ASMR</h3>
-<a href="https://www.youtube.com/watch?v=biOsa8ToOZM" target="_blank">▶ Watch Video</a>
+
+<p>Relaxing Bedwars gameplay.</p>
+
+<a href="https://www.youtube.com/watch?v=biOsa8ToOZM"
+
+target="_blank">
+
+▶ Watch
+
+</a>
+
 </div>
 
 <div class="video">
-<img src="https://iili.io/CSU9Gtt.png" alt="2 Player Obby with @Ljmited">
-<h3>2 Player Obby with @Ljmited</h3>
-<a href="https://www.youtube.com/watch?v=Eqnfmf3UW64" target="_blank">▶ Watch Video</a>
+
+<img src="https://iili.io/CSU9Gtt.png">
+
+<h3>2 Player Obby with Ljmited</h3>
+
+<p>Fun Obby challenge.</p>
+
+<a href="https://www.youtube.com/watch?v=Eqnfmf3UW64"
+
+target="_blank">
+
+▶ Watch
+
+</a>
+
 </div>
 
 <div class="video">
-<img src="https://iili.io/CSU2gmQ.png" alt="50 Subscribers T-pack">
-<h3>50 Subscribers T-pack</h3>
-<a href="https://www.youtube.com/watch?v=X09gz8hggT4" target="_blank">▶ Watch Video</a>
-</div>
+
+<img src="https://iili.io/CSU2gmQ.png">
+
+<h3>50 Subscribers T-Pack</h3>
+
+<p>Special subscriber release.</p>
+
+<a href="https://www.youtube.com/watch?v=X09gz8hggT4"
+
+target="_blank">
+
+▶ Watch
+
+</a>
 
 </div>
 
 </div>
-<div class="card">
 
-<h2>🔥 More NCS Songs for Bloxd.io</h2>
+<!-- ================= MUSIC ================= -->
 
-<p>My favorite NCS songs for Bedwars, PvP, Bridging and grinding!</p>
+<div id="music"></div>
+
+<h1 style="text-align:center;margin:60px 0;">
+
+🎵 Best NCS Music
+
+</h1>
 
 <div class="video-grid">
+
+<div class="video">
+
+<img src="https://img.youtube.com/vi/yJg-Y5byMMw/hqdefault.jpg">
+
+<h3>Mortals</h3>
+
+<p>Perfect for Bedwars & PvP.</p>
+
+<a href="https://www.youtube.com/watch?v=yJg-Y5byMMw"
+
+target="_blank">
+
+🎧 Listen
+
+</a>
+
+</div>
+
+<div class="video">
+
+<img src="https://img.youtube.com/vi/zyXmsVwZqX4/hqdefault.jpg">
+
+<h3>Why We Lose</h3>
+
+<p>One of the best gaming songs.</p>
+
+<a href="https://www.youtube.com/watch?v=zyXmsVwZqX4"
+
+target="_blank">
+
+🎧 Listen
+
+</a>
+
+</div>
+
 <div class="video">
 
 <img src="https://img.youtube.com/vi/J2X5mJ3HDYE/hqdefault.jpg">
 
-<h3>🎵 Invincible</h3>
+<h3>Invincible</h3>
 
-<p>Great for intense Bedwars fights.</p>
+<p>Great while bridging.</p>
 
-<a href="https://www.youtube.com/watch?v=J2X5mJ3HDYE" target="_blank">
+<a href="https://www.youtube.com/watch?v=J2X5mJ3HDYE"
 
-▶ Listen
+target="_blank">
+
+🎧 Listen
 
 </a>
 
 </div>
+
 <div class="video">
 
 <img src="https://img.youtube.com/vi/3nQNiWdeH2Q/hqdefault.jpg">
 
-<h3>🎵 Heroes Tonight</h3>
-
-<p>One of the best relaxing songs.</p>
-
-<a href="https://www.youtube.com/watch?v=3nQNiWdeH2Q" target="_blank">
-
-▶ Listen
-
-</a>
-
-</div>
-<div class="video">
-
-<img src="https://img.youtube.com/vi/__CRWE-L45k/hqdefault.jpg">
-
-<h3>🎵 Symbolism</h3>
-
-<p>Perfect while speed bridging.</p>
-
-<a href="https://www.youtube.com/watch?v=__CRWE-L45k" target="_blank">
-
-▶ Listen
-
-</a>
-
-</div>
-<div class="video">
-
-<img src="https://img.youtube.com/vi/TW9d8vYrVFQ/hqdefault.jpg">
-
-<h3>🎵 Sky High</h3>
+<h3>Heroes Tonight</h3>
 
 <p>Relaxing gameplay music.</p>
 
-<a href="https://www.youtube.com/watch?v=TW9d8vYrVFQ" target="_blank">
+<a href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
 
-▶ Listen
+target="_blank">
 
-</a>
-
-</div>
-<div class="video">
-
-<img src="https://img.youtube.com/vi/jK2aIUmmdP4/hqdefault.jpg">
-
-<h3>🎵 My Heart</h3>
-
-<p>Great for late-night Bloxd sessions.</p>
-
-<a href="https://www.youtube.com/watch?v=jK2aIUmmdP4" target="_blank">
-
-▶ Listen
-
-</a>
-
-</div>
-<div class="video">
-
-<img src="https://img.youtube.com/vi/9rujCfYXhQc/hqdefault.jpg">
-
-<h3>🎵 Fearless</h3>
-
-<p>Awesome for PvP battles.</p>
-
-<a href="https://www.youtube.com/watch?v=9rujCfYXhQc" target="_blank">
-
-▶ Listen
-
-</a>
-
-</div>
-<div class="video">
-
-<img src="https://img.youtube.com/vi/p7ZsBPK656s/hqdefault.jpg">
-
-<h3>🎵 Blank</h3>
-
-<p>Calm and chill background music.</p>
-
-<a href="https://www.youtube.com/watch?v=p7ZsBPK656s" target="_blank">
-
-▶ Listen
-
-</a>
-
-</div>
-<div class="video">
-
-<img src="https://img.youtube.com/vi/bM7SZ5SBzyY/hqdefault.jpg">
-
-<h3>🎵 Fade</h3>
-
-<p>A legendary gaming song.</p>
-
-<a href="https://www.youtube.com/watch?v=bM7SZ5SBzyY" target="_blank">
-
-▶ Listen
+🎧 Listen
 
 </a>
 
 </div>
 
-<footer>
-© 2026 Saad Bloxd Website | Made by Saad ❤️
-</footer>
-<button onclick="topFunction()" id="topBtn">⬆</button>
+</div>
+<!-- ================= CROSSHAIR SECTION ================= -->
 
-<script>
+<div id="crosshair"></div>
 
-const btn=document.getElementById("topBtn");
+<h1 style="text-align:center;margin:70px 0;font-size:45px;">
+🎯 Saad's Best Crosshairs
+</h1>
 
-window.onscroll=function(){
+<p style="text-align:center;font-size:20px;margin-bottom:40px;">
+Download the exact crosshairs I use in Bloxd.io!
+</p>
 
-btn.style.display=
-window.scrollY>300?"block":"none";
+<div class="video-grid">
 
-}
+<!-- ================= CROSSHAIR 1 ================= -->
 
-function topFunction(){
+<div class="video crosshair-card">
 
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
+<div class="crosshair-box">
 
-}
+<img src="https://iili.io/CUuTTJe.png">
 
-</script>
-#topBtn{
+</div>
 
-display:none;
-position:fixed;
-right:20px;
-bottom:20px;
-border:none;
+<h3>🎯 Crosshair #1</h3>
+
+<p>
+
+✔ Good for Bedwars
+
+<br>
+
+✔ Clean Visibility
+
+</p>
+
+<a class="download-btn"
+
+href="https://www.mediafire.com/file/w0mb1kbolrd9v0g/c1.txt/file"
+
+target="_blank">
+
+⬇ Download Crosshair
+
+</a>
+
+</div>
+
+<!-- ================= CROSSHAIR 2 ================= -->
+
+<div class="video crosshair-card">
+
+<div class="crosshair-box">
+
+<img src="https://iili.io/CUuTD7e.png">
+
+</div>
+
+<h3>🎯 Crosshair #2</h3>
+
+<p>
+
+✔ Best for Bridging
+
+<br>
+
+✔ Smooth Aim
+
+</p>
+
+<a class="download-btn"
+
+href="https://www.mediafire.com/file/3g7amig9v09968l/c2.txt/file"
+
+target="_blank">
+
+⬇ Download Crosshair
+
+</a>
+
+</div>
+
+<!-- ================= CROSSHAIR 3 ================= -->
+
+<div class="video crosshair-card">
+
+<div class="crosshair-box">
+
+<img src="https://iili.io/CUuucTG.png">
+
+</div>
+
+<h3>🎯 Crosshair #3</h3>
+
+<p>
+
+✔ Great for PvP
+
+<br>
+
+✔ Minimal Design
+
+</p>
+
+<a class="download-btn"
+
+href="https://www.mediafire.com/file/cz33h4nz431r5hz/c3.txt/file"
+
+target="_blank">
+
+⬇ Download Crosshair
+
+</a>
+
+</div>
+
+<!-- ================= CROSSHAIR 4 ================= -->
+
+<div class="video crosshair-card">
+
+<div class="crosshair-box">
+
+<img src="https://iili.io/CUuA2tf.png">
+
+</div>
+
+<h3>🎯 Crosshair #4</h3>
+
+<p>
+
+✔ Balanced
+
+<br>
+
+✔ Great Visibility
+
+</p>
+
+<a class="download-btn"
+
+href="https://www.mediafire.com/file/70d5thsxt1wlonu/c4.txt/file"
+
+target="_blank">
+
+⬇ Download Crosshair
+
+</a>
+
+</div>
+
+<!-- ================= BEST CROSSHAIR ================= -->
+
+<div class="video best">
+
+<div style="
+background:black;
 padding:15px;
-font-size:20px;
-border-radius:50%;
-background:#ff9800;
-cursor:pointer;
+text-align:center;
+color:gold;
+font-size:24px;
+font-weight:bold;">
 
-}
-<script>
+👑 SAAD'S PICK 👑
 
-let visits=localStorage.getItem("visits");
+</div>
 
-if(visits==null){
+<div class="crosshair-box">
 
-visits=1;
+<img src="https://iili.io/qXEaxIV.png">
 
-}else{
+</div>
 
-visits++;
+<h3 style="color:gold;">
 
-}
+⭐ Best Crosshair ⭐
 
-localStorage.setItem("visits",visits);
+</h3>
 
-document.getElementById("visitor").innerHTML=visits;
+<p>
 
-</script>
+🔥 The crosshair I currently use!
+
+<br><br>
+
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+Perfect for:
+
+<br>
+
+⚔ PvP
+
+<br>
+
+🛏 Bedwars
+
+<br>
+
+🌉 Bridging
+
+</p>
+
+<a class="download-btn"
+
+href="https://www.mediafire.com/file/zvtpyx30rrnlgg0/c5.txt/file"
+
+target="_blank">
+
+⬇ Download My Crosshair
+
+</a>
+
+</div>
+
+</div>
+
+<br><br>
+
 <div class="card">
 
-<h2>👀 Visitors</h2>
+<h2 style="text-align:center;color:#145a32;">
 
-<h1 id="visitor"></h1>
+💡 Why I Use Crosshair #5
+
+</h2>
+
+<p style="text-align:center;font-size:20px;line-height:35px;">
+
+👑 This is my personal favorite crosshair.
+
+<br><br>
+
+It gives me better visibility during PvP,
+
+helps me bridge more accurately,
+
+and makes Bedwars feel much smoother.
+
+<br><br>
+
+⭐ I highly recommend trying it!
+
+</p>
 
 </div>
+<!-- ================= WEBSITE INFO ================= -->
+
+<div class="card">
+
+<h2>👀 Website Visits</h2>
+
+<h1 id="visitor" style="text-align:center;">0</h1>
+
+</div>
+
 <div class="card">
 
 <h2>💡 Bloxd Tip</h2>
 
-<p id="tip"></p>
+<p id="tip" style="text-align:center;font-size:22px;"></p>
 
 </div>
-<script>
 
-const tips=[
-
-"Practice bridging every day!",
-"Use texture packs for better visibility!",
-"Always protect your bed first!",
-"Don't waste gold early!",
-"Learn clutching to survive falls!"
-
-];
-
-document.getElementById("tip").innerHTML=
-tips[Math.floor(Math.random()*tips.length)];
-
-</script>
 <div class="card">
 
 <h2>🕒 Current Time</h2>
 
-<h1 id="clock"></h1>
+<h1 id="clock" style="text-align:center;"></h1>
 
 </div>
 
-<script>
+<!-- Scroll To Top -->
 
-setInterval(()=>{
+<button id="topBtn" onclick="topFunction()">
 
-document.getElementById("clock").innerHTML=
-new Date().toLocaleTimeString();
+⬆
 
-},1000);
+</button>
 
-</script>
+<!-- Falling Blocks -->
+
 <div id="blocks"></div>
 
-<script>
-const blocks=document.getElementById("blocks");
+<footer>
 
-setInterval(()=>{
-let block=document.createElement("div");
+<h2>🎮 Thanks For Visiting!</h2>
 
-block.className="block";
+<br>
 
-block.style.left=Math.random()*window.innerWidth+"px";
+<p>
 
-block.style.animationDuration=(Math.random()*3+2)+"s";
+Made with ❤️ by <b>Saad</b>
 
-blocks.appendChild(block);
+<br><br>
 
-setTimeout(()=>{
-block.remove();
-},5000);
+📺 youtube.com/@Saad_Bloxd_YT3
 
-},200);
-</script>
+<br>
+
+💬 Discord : saadisonline_
+
+</p>
+
+<br>
+
+© 2026 Saad Bloxd Website
+
+</footer>
+
+<style>
+
+#topBtn{
+
+display:none;
+position:fixed;
+bottom:25px;
+right:25px;
+padding:16px;
+font-size:22px;
+border:none;
+border-radius:50%;
+background:#ff9800;
+color:white;
+cursor:pointer;
+transition:.3s;
+z-index:999;
+
+}
+
+#topBtn:hover{
+
+background:#ffc107;
+transform:scale(1.1);
+
+}
+
 #blocks{
 
 position:fixed;
@@ -636,56 +994,180 @@ animation:fall linear;
 @keyframes fall{
 
 from{
+
 top:-30px;
+transform:rotate(0deg);
+
 }
 
 to{
+
 top:100%;
 transform:rotate(360deg);
+
 }
 
 }
+
+/* Click Effect */
+
+.click{
+
+position:absolute;
+width:18px;
+height:18px;
+background:yellow;
+border-radius:50%;
+pointer-events:none;
+animation:clickAnim .6s linear;
+
+}
+
+@keyframes clickAnim{
+
+to{
+
+transform:scale(5);
+opacity:0;
+
+}
+
+}
+
+footer{
+
+margin-top:60px;
+padding:40px;
+background:#0b3d16;
+text-align:center;
+font-size:18px;
+
+}
+
+</style>
+
 <script>
 
-document.addEventListener("mousemove",e=>{
+/* Visitor Counter */
 
-let dot=document.createElement("div");
+let visits = localStorage.getItem("visits");
 
-dot.className="dot";
+if(visits==null){
 
-dot.style.left=e.pageX+"px";
+visits=1;
 
-dot.style.top=e.pageY+"px";
+}else{
 
-document.body.appendChild(dot);
+visits++;
 
-setTimeout(()=>dot.remove(),600);
+}
+
+localStorage.setItem("visits",visits);
+
+document.getElementById("visitor").innerHTML=visits;
+
+/* Bloxd Tips */
+
+const tips=[
+
+"🛏 Protect your bed first!",
+"⚔ Always carry extra blocks!",
+"🌉 Practice bridging every day!",
+"💎 Upgrade armor before attacking!",
+"🏹 Bow spam can save games!",
+"🎯 Use your favorite crosshair!",
+"🔥 Don't waste gold early!",
+"🚀 Rush smart, not fast!"
+
+];
+
+document.getElementById("tip").innerHTML=
+
+tips[Math.floor(Math.random()*tips.length)];
+
+/* Live Clock */
+
+setInterval(function(){
+
+document.getElementById("clock").innerHTML=
+
+new Date().toLocaleTimeString();
+
+},1000);
+
+/* Scroll Button */
+
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+topBtn.style.display=
+
+window.scrollY>300?"block":"none";
+
+}
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+/* Falling Blocks */
+
+const blocks=document.getElementById("blocks");
+
+setInterval(function(){
+
+let block=document.createElement("div");
+
+block.className="block";
+
+block.style.left=Math.random()*window.innerWidth+"px";
+
+block.style.animationDuration=(Math.random()*3+2)+"s";
+
+blocks.appendChild(block);
+
+setTimeout(function(){
+
+block.remove();
+
+},5000);
+
+},250);
+
+/* Click Effect (Only on Click) */
+
+document.addEventListener("click",function(e){
+
+let c=document.createElement("div");
+
+c.className="click";
+
+c.style.left=(e.pageX-9)+"px";
+
+c.style.top=(e.pageY-9)+"px";
+
+document.body.appendChild(c);
+
+setTimeout(function(){
+
+c.remove();
+
+},600);
 
 });
 
 </script>
-.dot{
 
-position:absolute;
-width:10px;
-height:10px;
-border-radius:50%;
-background:yellow;
-pointer-events:none;
-animation:fade .6s linear;
-
-}
-
-@keyframes fade{
-
-to{
-
-opacity:0;
-transform:scale(4);
-
-}
-
-}
+</div>
 
 </body>
 </html>
